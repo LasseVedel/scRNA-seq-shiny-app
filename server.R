@@ -2,6 +2,16 @@ library(Matrix)
 library(shiny)
 library(ggplot2)
 
+#Load count matrix as .rds file. The matrix is compressed to a large dgCMatrix. 
+counts_rds <- readRDS("mcl_count_matrix.rds")
+
+#Extract gene names for drop down meny 
+gene_names <- sort(colnames(counts_rds))
+
+#read calculated expression percentages 
+expression_percentages <- read.csv("gene_percentage.csv", sep = ",")
+rownames(expression_percentages) <- expression_percentages$X
+
 
 server <- function(input, output) {
   
