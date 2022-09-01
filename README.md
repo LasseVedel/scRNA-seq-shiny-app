@@ -1,4 +1,4 @@
 # scRNA-seq-shiny-app
 
-Link: 
-https://b-cell-malignancies.shinyapps.io/b_cell_cancers_scRNA/ 
+Link to app: 
+https://b-cell-malignancies.shinyapps.io/b_cell_cancers_scRNA_expression_analysis/
